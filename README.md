@@ -14,7 +14,7 @@ Backend desarrollado con Node.js y Express para proyecto de tesis.
 Si aún no tienes el código, clónalo:
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/andresuisek/tesis-backend.git
 cd tesis-backend
 ```
 
