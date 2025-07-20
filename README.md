@@ -113,6 +113,8 @@ tesis-backend/
 
 ## 🏗️ Detalle de Arquitectura y Tecnologías Utilizadas
 
+![Backend Architecture Diagram](backend_architecture.png)
+
 | Capa / utilidad    | Herramienta      | Propósito                          |
 | ------------------ | ---------------- | ---------------------------------- |
 | **Runtime**        | Node.js 20 (LTS) | Flujo I/O no bloqueante            |
@@ -123,8 +125,8 @@ tesis-backend/
 | **Observabilidad** | Sentry           | Monitoreo de errores y trazas      |
 | **CORS**           | cors (npm)       | Política de origen cruzado segura  |
 | **Testing**        | Jest + Supertest | Pruebas unitarias e integración    |
-| **CI/CD** | GitHub Actions | Lint → tests → deploy (Render) |
-| --------- | -------------- | ------------------------------ |
+| **CI/CD**          | GitHub Actions   | Lint → tests → deploy (Render)     |
+| ---------          | --------------   | ------------------------------     |
 
 ## 📝 Scripts Disponibles
 
@@ -135,4 +137,3 @@ tesis-backend/
 ## 🤝 Contribución
 
 Este es un proyecto de tesis. Para contribuir o reportar issues, contacta al desarrollador.
-
