@@ -4,7 +4,7 @@ Backend desarrollado con Node.js y Express para proyecto de tesis.
 
 ## 📋 Requisitos Previos
 
-- Node.js (versión 16 o superior)
+- Node.js (versión 20 o superior)
 - npm (viene incluido con Node.js)
 
 ## 🚀 Instalación y Configuración
@@ -111,13 +111,20 @@ tesis-backend/
 └── .git/             # Control de versiones
 ```
 
-## 🛠️ Tecnologías Utilizadas
+## 🏗️ Detalle de Arquitectura y Tecnologías Utilizadas
 
-- **Node.js** - Entorno de ejecución
-- **Express.js** - Framework web
-- **CORS** - Manejo de políticas CORS
-- **dotenv** - Manejo de variables de entorno
-- **nodemon** - Recarga automática en desarrollo
+| Capa / utilidad    | Herramienta      | Propósito                          |
+| ------------------ | ---------------- | ---------------------------------- |
+| **Runtime**        | Node.js 20 (LTS) | Flujo I/O no bloqueante            |
+| **Framework**      | Express 4        | Enrutamiento HTTP                  |
+| **ORM**            | Prisma 5         | Tipos seguros, migraciones         |
+| **Auth**           | Supabase         | JWT + RLS sobre Postgres           |
+| **Queue**          | BullMQ + Redis   | Jobs pesados (XML SRI, embeddings) |
+| **Observabilidad** | Sentry           | Monitoreo de errores y trazas      |
+| **CORS**           | cors (npm)       | Política de origen cruzado segura  |
+| **Testing**        | Jest + Supertest | Pruebas unitarias e integración    |
+| **CI/CD** | GitHub Actions | Lint → tests → deploy (Render) |
+| --------- | -------------- | ------------------------------ |
 
 ## 📝 Scripts Disponibles
 
@@ -128,3 +135,4 @@ tesis-backend/
 ## 🤝 Contribución
 
 Este es un proyecto de tesis. Para contribuir o reportar issues, contacta al desarrollador.
+
